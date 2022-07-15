@@ -16,6 +16,8 @@ def print_hi(name):
 if __name__ == '__main__':
     url = 'http://www.weather.com.cn/textFC/hb.shtml'
     headers = {
+        # 'Cookie':
+        # 'Referer':
         'User-Agent': UserAgent().random
     }
     writeCSV(analizesData(getData(url=url, headers=headers)))
